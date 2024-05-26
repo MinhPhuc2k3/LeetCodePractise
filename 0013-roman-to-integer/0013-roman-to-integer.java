@@ -11,10 +11,11 @@ class Solution {
         int res = 0;
         int prev = 0;
         for(int i=s.length()-1; i>=0; i--){ 
-            if(prev>romanHash.get(s.charAt(i))){
-                res-=romanHash.get(s.charAt(i));
-            }else res+=romanHash.get(s.charAt(i));
-            prev = romanHash.get(s.charAt(i));
+            int tmp  = romanHash.get(s.charAt(i));
+            if(prev>tmp){
+                res-=tmp;
+            }else res+=tmp;
+            prev = tmp;
         }
         return res;
     }
