@@ -8,9 +8,7 @@ class Solution {
                 st.pop(); 
                 res = Math.max(res, i-st.peek());
                 
-            }else {
-                st.push(i);
-            }
+            }else st.push(i);
         }
         return res;
     }
