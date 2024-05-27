@@ -1,36 +1,26 @@
 class Solution {
     public String convert(String s, int numRows) {
         if(numRows==1) return s;
-        int[][] arr =  new int[numRows][s.length()];
-        boolean state = true;
-        int row = 0;
-        int col = 0;
-        for(int i=0; i<s.length(); i++){
-            if(state || numRows ==  2){
-                arr[row][col] = s.charAt(i);
-                row++;
-                if(row==numRows) {
-                    state=false;
-                    row = numRows-2;
+        int step = 2*numRows-2;
+        String res="";
+        int ne = -1;
+        for(int row = 0; row<numRows; row++){
+            if(row==0 || row==numRows-1){
+                for(int i=row; i<s.length(); i+=step){
+                    res+=Character.toString((char) s.charAt(i));
                 }
             }else{
-                arr[row][col] = s.charAt(i);
-                row--;
-                if(row==0){
-                    state=true;
+                int x = ne;
+                for(int i=row; i<s.length()||x<s.length(); i+=step){
+                    if(x>0 && x<s.length()){
+                        res+=Character.toString((char) s.charAt(x));
+                    }
+                    if(i>0 && i<s.length()){
+                        res+=Character.toString((char) s.charAt(i));
+                    }
+                    x+=step;
                 }
-            }
-            col++;
-        }
-        String res = "";
-        for(int i=0; i<numRows; i++){
-            for(int j=0; j<s.length(); j++){
-                if(arr[i][j]!=0){
-                    res+=Character.toString((char) arr[i][j]);
-                }
-                if(res.length()==s.length()){
-                    return res;
-                }
+                ne--;
             }
         }
         return res;
