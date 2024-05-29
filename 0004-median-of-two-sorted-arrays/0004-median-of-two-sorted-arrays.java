@@ -1,32 +1,22 @@
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int[] nums = new int[nums1.length+nums2.length];
-        int i=0; 
-        int j=0;
-        int k=0;
-        while(i<nums1.length&&j<nums2.length){
-            if(nums1[i]<nums2[j]){ 
-                nums[k] = nums1[i];    
-                i++;
+        if(nums1.length>nums2.length) return findMedianSortedArrays(nums2, nums1);
+        int sz = nums1.length+nums2.length;
+        int l = 0, r = nums1.length;
+        while(l<=r){
+            int x = (l+r)/2;
+            int y = sz/2-x;
+            int al = (x>0)? nums1[x-1]:Integer.MIN_VALUE;
+            int ar = (x<nums1.length)? nums1[x]:Integer.MAX_VALUE;
+            int bl = (y>0)? nums2[y-1]:Integer.MIN_VALUE;
+            int br = (y<nums2.length)? nums2[y]:Integer.MAX_VALUE;
+            if(al<=br&&bl<=ar){
+                return (sz%2==0)? (double)(Math.max(al,bl)+Math.min(ar,br))/2:(double)Math.min(ar, br);
             }
-            else {
-                nums[k] = nums2[j];
-                j++;
-            }
-            k++;
+            else if(al>br){
+                r = x-1;
+            }else l = x+1;
         }
-        while(i<nums1.length){
-            nums[k] = nums1[i];
-            i++;
-            k++;
-        }
-        while(j<nums2.length){
-            nums[k] = nums2[j];
-            j++;
-            k++;
-        }
-        double a = nums[nums.length/2];
-        double b = nums[(nums.length-1)/2];
-        return (a+b)/2;
+        return l;
     }
 }
