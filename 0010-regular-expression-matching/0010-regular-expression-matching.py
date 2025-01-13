@@ -1,5 +1,4 @@
 def posMatch(s: str, p: str, i: int, j: int) -> bool:
-    #print(str(i+1)+" "+str(j+1))
     if i == len(s):
         if j==len(p):
             return True
