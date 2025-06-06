@@ -12,6 +12,7 @@
 | ------- |
 | [0010-regular-expression-matching](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0010-regular-expression-matching) |
 | [0055-jump-game](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0062-unique-paths) |
 ## Recursion
 |  |
 | ------- |
@@ -20,6 +21,7 @@
 |  |
 | ------- |
 | [0029-divide-two-integers](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0029-divide-two-integers) |
+| [0062-unique-paths](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0062-unique-paths) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -32,4 +34,8 @@
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0055-jump-game) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
