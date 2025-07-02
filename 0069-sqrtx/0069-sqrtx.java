@@ -6,7 +6,7 @@ class Solution {
         int mid;
         while(l<=r){
             mid = l - (l-r)/2;
-            if(mid==0 || (mid!=0 && mid<=x/mid)){
+            if(mid==0 || mid<=x/mid){
                 sqrt=mid;
                 l = mid+1;
             }else{
