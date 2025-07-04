@@ -30,6 +30,7 @@
 ## Array
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0036-valid-sudoku) |
 | [0055-jump-game](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0055-jump-game) |
 ## Greedy
 |  |
@@ -43,4 +44,12 @@
 |  |
 | ------- |
 | [0069-sqrtx](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0069-sqrtx) |
+## Hash Table
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0036-valid-sudoku) |
+## Matrix
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0036-valid-sudoku) |
 <!---LeetCode Topics End-->
