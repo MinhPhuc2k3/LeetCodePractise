@@ -6,9 +6,8 @@ class Solution {
             count.put(nums[i], new Pair(nums[i], count.get(nums[i]).V+1));
         }
         List<Pair> list = new ArrayList(count.values());
-        Collections.sort(list, (o1, o2)->Integer.compare(o1.V, o2.V));
-        Collections.reverse(list);
-        int []res = new int [k];
+        Collections.sort(list, (o1, o2)->-Integer.compare(o1.V, o2.V));
+        int []res = new int[k];
         for(int i=0; i<k; i++){
             res[i] = list.get(i).K;
         }
