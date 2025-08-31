@@ -3,7 +3,7 @@ class Solution {
         Map<Integer, Pair> count = new HashMap<>();
         for(int i=0; i<nums.length; i++){
             count.putIfAbsent(nums[i], new Pair(nums[i], 0));
-            count.put(nums[i], new Pair(nums[i], count.get(nums[i]).V+1));
+            count.get(nums[i]).V += 1;
         }
         List<Pair> list = new ArrayList(count.values());
         Collections.sort(list, (o1, o2)->-Integer.compare(o1.V, o2.V));
