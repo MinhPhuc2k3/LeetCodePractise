@@ -32,7 +32,6 @@ class Solution {
         for(Node neighbor: source.neighbors){
             if(!nodeMap.containsKey(neighbor.val)){
                 nodeMap.put(neighbor.val, new Node(neighbor.val, new ArrayList<>()));
-               // node.neighbors.add(nodeMap.get(neighbor.val));
                 buildGraph(nodeMap.get(neighbor.val), neighbor, nodeMap);
             }
             node.neighbors.add(nodeMap.get(neighbor.val));
