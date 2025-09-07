@@ -6,9 +6,8 @@ class Solution {
         for(int i=0; i<s.length(); i++){
             if(lastPositionOfChar.containsKey(s.charAt(i))&&lastPositionOfChar.get(s.charAt(i)) >= beginOfSubstring){
                 beginOfSubstring = lastPositionOfChar.get(s.charAt(i))+1;
-                System.out.println(beginOfSubstring);
             }
-            result = Math.max(i - beginOfSubstring + 1, result);
+            result = Math.max(result, i-beginOfSubstring+1);
             lastPositionOfChar.put(s.charAt(i), i);
         }
         return result;
