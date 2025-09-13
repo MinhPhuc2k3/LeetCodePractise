@@ -7,10 +7,12 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0010-regular-expression-matching) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0010-regular-expression-matching) |
 | [0045-jump-game-ii](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0055-jump-game) |
@@ -100,4 +102,8 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0003-longest-substring-without-repeating-characters) |
+## Two Pointers
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/MinhPhuc2k3/LeetCodePractise/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
